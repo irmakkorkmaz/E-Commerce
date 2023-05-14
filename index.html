@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>E-Commerce</h1>
+      <input type="text" placeholder="enter product name" />
+      <div>
+        <button id="open-btn">Basket</button>
+        <button>Sign Up</button>
+        <button>Login</button>
+      </div>
+    </header>
+
+    <main>
+      <!--Categories  -->
+      <div class="category-wrapper">
+        <h1>Categories</h1>
+        <div class="categories"></div>
+      </div>
+
+      <!-- Products -->
+      <div class="product-wrapper">
+        <h1>Products</h1>
+        <div class="products"></div>
+      </div>
+
+      <!-- modal -->
+      <div class="modal-wrapper">
+        <div class="modal">
+          <img id="close-btn" src="images/close.png" />
+          <div class="modal-list"></div>
+
+          <div class="total">
+            total:
+            <span id="modal-info">
+              0
+            </span>
+            $
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
